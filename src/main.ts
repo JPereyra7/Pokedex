@@ -24,7 +24,6 @@ pokeForm.addEventListener('submit', async (event) => {
     if (mainResult) {
       mainResult.innerHTML = "";
     }
-
     // Check if there are any cards in the response
     if (data.data && data.data.length > 0) {
       const q = Math.min(20, data.data.length);
@@ -42,6 +41,7 @@ pokeForm.addEventListener('submit', async (event) => {
     // Handle other errors
     console.error('Error fetching data');
   }
+  
 });
 
 // Define types for the API response
@@ -52,3 +52,4 @@ interface CardApiResponse {
     };
   }[];
 }
+

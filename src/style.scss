@@ -145,13 +145,19 @@ h1 {
 .pokeCards {
   width: 150px;
   border-radius: 5px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
-&:hover {
-  opacity: 80%;
-  cursor: pointer;
-  
-}
+  transition: all 0.5s ease;
+
+  &:hover {
+    // opacity: 75%;
+    cursor: pointer;
+    transform: rotate(3deg); // Add a small rotation on hover
+  }
+
+  &:hover.left {
+    transform: rotate(-3deg); // Add a small rotation to the left on hover
+  }
 }
