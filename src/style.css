@@ -2,11 +2,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #f9f9f9;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,6 +17,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -29,7 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url('https://m.media-amazon.com/images/I/61lqRxbsC5L.jpg');
+  background-image: url("https://m.media-amazon.com/images/I/61lqRxbsC5L.jpg");
   background-repeat: repeat;
   background-size: cover;
 }
@@ -71,11 +70,13 @@ h1 {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.6666666667));
 }
+
 .logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
+  filter: drop-shadow(0 0 2em rgba(49, 120, 198, 0.6666666667));
 }
 
 .card {
@@ -88,10 +89,8 @@ h1 {
 
 .pokeForm {
   border: 1px solid #213547;
-  background-color: #586b7b92;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  background-color: rgba(88, 107, 123, 0.5725490196);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   padding: 30px;
   display: flex;
@@ -119,11 +118,11 @@ h1 {
   background-color: #213547;
   cursor: pointer;
   transition: border-color 0.25s;
-
-&:hover {
+}
+.pokeBtn:hover {
   border-color: #646cff;
 }
-}
+
 .pokeBtn:focus,
 .pokeBtn:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -141,38 +140,28 @@ h1 {
     background-color: #f9f9f9;
   }
 }
-
 .pokeCards {
   width: 150px;
   border-radius: 5px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-
   transition: all 0.5s ease;
-
-  &:hover {
-    // opacity: 75%;
-    cursor: pointer;
-    transform: rotate(3deg); // Add a small rotation on hover
-  }
-
-  &:hover.left {
-    transform: rotate(-3deg); // Add a small rotation to the left on hover
-  }
-  &:active {
-    transform: scale(1.7);
-  }
+}
+.pokeCards:hover {
+  cursor: pointer;
+  transform: rotate(3deg);
+}
+.pokeCards:hover.left {
+  transform: rotate(-3deg);
+}
+.pokeCards:active {
+  transform: scale(1.7);
 }
 
-// Mobile
 @media (max-width: 768px) {
   .pokeForm {
     border: 1px solid #213547;
-    background-color: #586b7b92;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: rgba(88, 107, 123, 0.5725490196);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     border-radius: 5px;
     padding: 30px;
     display: flex;
@@ -181,7 +170,6 @@ h1 {
     gap: 1.5em;
     align-items: center;
   }
-  
   .pokeInput {
     width: 100%;
     max-width: 15rem;
@@ -190,7 +178,6 @@ h1 {
     outline: none;
     color: rgb(210, 194, 142);
   }
-  
   .pokeBtn {
     width: 100%;
     max-width: 15rem;
@@ -203,24 +190,21 @@ h1 {
     background-color: #213547;
     cursor: pointer;
     transition: border-color 0.25s;
-  
-  &:hover {
-    border-color: #646cff;
   }
+  .pokeBtn:hover {
+    border-color: #646cff;
   }
   .pokeBtn:focus,
   .pokeBtn:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
-
   .pokeResult {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  
   .pokeCards {
     width: calc(50% - 2rem); /* Two cards per row with a small gap */
     margin-bottom: 2rem; /* Adjust margin for spacing */
   }
-}
+}/*# sourceMappingURL=style.css.map */
